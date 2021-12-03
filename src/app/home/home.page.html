@@ -13,8 +13,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-item>
+    <ion-label position="stacked">{{'Label'}}</ion-label>
+    <div class="ion-chip-group">
+      <ion-chip [outline]="true" *ngFor="let value of control.value">
+        <ion-label>{{value}}</ion-label>
+        <ion-icon name="close-circle" (click)="remove(value)"></ion-icon>
+      </ion-chip>
+      <ion-input
+              [type]="'text'"
+              [formControl]="valueInputControl"
+              (keydown)="onKeydown($event)"
+              [placeholder]="'Placeholder'">
+      </ion-input>
+    </div>
+  </ion-item>
 </ion-content>

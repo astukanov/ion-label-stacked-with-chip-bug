@@ -25,3 +25,20 @@
 #container a {
   text-decoration: none;
 }
+
+.ion-chip-group {
+  display: flex;
+  flex-flow: row wrap;
+  height: 33px;
+  width: 100%;
+}
+
+.ion-chip-group ion-chip {
+  flex: 0 0 auto;
+  margin: 2px 2px;
+}
+
+.ion-chip-group ion-input {
+  min-width: 120px;
+  height: 100%;
+}
