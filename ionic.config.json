@@ -1,0 +1,7 @@
+{
+  "name": "ion-label-stacked-with-chip-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
